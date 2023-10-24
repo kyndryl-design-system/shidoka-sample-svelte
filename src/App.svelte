@@ -10,7 +10,7 @@
 </script>
 
 <kyn-ui-shell>
-	<kyn-header divider="" apptitle="Shidoka SvelteKit">
+	<kyn-header divider="" apptitle="Shidoka Svelte">
 		<kyn-header-panel slot="left" heading="Panel Heading">
 			<span slot="button">
 				{@html switcherIcon}
@@ -90,7 +90,7 @@
 
 		<div class="kd-grid">
 			<div class="kd-grid__col--sm-4 kd-grid__col--md-8 kd-grid__col--lg-12">
-				<h1 class="kd-type--headline-03">Shidoka SvelteKit Sample App</h1>
+				<h1 class="kd-type--headline-03">Shidoka Svelte Sample App</h1>
 			</div>
 
 			<div class="kd-grid__col--sm-4 kd-grid__col--md-4 kd-grid__col--lg-8">
