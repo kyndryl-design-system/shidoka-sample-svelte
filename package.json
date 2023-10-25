@@ -14,8 +14,9 @@
     "vite": "^4.4.5"
   },
   "dependencies": {
-    "@kyndryl-design-system/shidoka-applications": "^1.0.0-beta.67",
-    "@kyndryl-design-system/shidoka-charts": "^1.0.0-beta.10",
+    "@kyndryl-design-system/shidoka-foundation": "^1.0.0-beta.37",
+    "@kyndryl-design-system/shidoka-applications": "^1.0.0-beta.68",
+    "@kyndryl-design-system/shidoka-charts": "^1.0.0-beta.11",
     "carbon-icons-svelte": "^12.3.0",
     "sass": "^1.69.4"
   }
