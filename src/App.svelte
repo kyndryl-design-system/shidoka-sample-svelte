@@ -1,39 +1,20 @@
 <script>
-  import '@kyndryl-design-system/shidoka-applications/components/global/uiShell';
-  import '@kyndryl-design-system/shidoka-applications/components/global/header';
+  	import '@kyndryl-design-system/shidoka-applications/components/global/uiShell';
+  	import '@kyndryl-design-system/shidoka-applications/components/global/header';
 	import '@kyndryl-design-system/shidoka-applications/components/global/localNav';
 	import '@kyndryl-design-system/shidoka-applications/components/global/footer';
 	import '@kyndryl-design-system/shidoka-charts/components/chart';
-
-  import switcherIcon from '@kyndryl-design-system/shidoka-foundation/assets/svg/switcher.svg?raw';
-	import UserAvatar from 'carbon-icons-svelte/lib/UserAvatar.svelte';
+	import UserAvatar from '@kyndryl-design-system/shidoka-icons/svg/monochrome/20/user.svg?raw';
+	import sampleIcon from '@kyndryl-design-system/shidoka-icons/svg/monochrome/16/circle-stroke.svg?raw';
 </script>
 
 <kyn-ui-shell>
 	<kyn-header divider="" apptitle="Shidoka Svelte">
-		<kyn-header-panel slot="left" heading="Panel Heading">
-			<span slot="button">
-				{@html switcherIcon}
-			</span>
-
-			<kyn-header-panel-link href="javascript:void(0)">
-				<UserAvatar size={24} />
-				Link 1
-			</kyn-header-panel-link>
-			<kyn-header-panel-link href="javascript:void(0)">
-				<UserAvatar size={24} />
-				Link 2
-			</kyn-header-panel-link>
-			<kyn-header-panel-link href="javascript:void(0)">
-				<UserAvatar size={24} />
-				Link 3
-			</kyn-header-panel-link>
-		</kyn-header-panel>
 
 		<kyn-header-nav>
-			<kyn-header-link href="javascript:void(0)"> Link 1 </kyn-header-link>
-			<kyn-header-link href="javascript:void(0)" isActive> Link 2 </kyn-header-link>
-			<kyn-header-link href="javascript:void(0)">
+			<kyn-header-link href="javascript:void(0)"><span>{@html sampleIcon}</span> Link 1 </kyn-header-link>
+			<kyn-header-link href="javascript:void(0)" isActive><span>{@html sampleIcon}</span>  Link 2 </kyn-header-link>
+			<kyn-header-link href="javascript:void(0)"><span>{@html sampleIcon}</span> 
 				Link 3
 
 				<kyn-header-link slot="links" href="javascript:void(0)"> Sub Link # 1 </kyn-header-link>
@@ -42,13 +23,11 @@
 		</kyn-header-nav>
 
 		<kyn-header-flyouts>
-			<kyn-header-flyout>
-				<span slot="button">Sign in</span>
-
-				<div>
+			<kyn-header-flyout label="Account">
+				<span slot="button" >{@html UserAvatar}</span>
 					<kyn-header-link href="javascript:void(0)"> Login </kyn-header-link>
 					<kyn-header-link href="javascript:void(0)"> Sign up </kyn-header-link>
-				</div>
+
 			</kyn-header-flyout>
 
 			<kyn-header-flyout assistiveText="My Account" hideArrow>
@@ -61,12 +40,12 @@
 
 	<kyn-local-nav>
 		<kyn-local-nav-link href="javascript:void(0)" active="">
-			<UserAvatar size={20} slot="icon" />
+			<span slot="icon" >{@html UserAvatar}</span>
 			Link 1
 		</kyn-local-nav-link>
 
 		<kyn-local-nav-link href="javascript:void(0)">
-			<UserAvatar size={20} slot="icon" />
+			<span slot="icon" >{@html UserAvatar}</span>
 			Link 2
 
 			<kyn-local-nav-link slot="links" href="javascript:void(0)"> L2 Link 1 </kyn-local-nav-link>
@@ -74,7 +53,7 @@
 		</kyn-local-nav-link>
 
 		<kyn-local-nav-link href="javascript:void(0)" expanded="">
-			<UserAvatar size={20} slot="icon" />
+			<span slot="icon" >{@html UserAvatar}</span>
 			Link 3
 
 			<kyn-local-nav-link slot="links" href="javascript:void(0)">
@@ -161,6 +140,6 @@
 	</main>
 
 	<kyn-footer>
-		<span slot="copyright"> Copyright &copy; 2023 Kyndryl Inc. All rights reserved. </span>
+		<span slot="copyright"> Copyright &copy; 2025 Kyndryl Inc. All rights reserved. </span>
 	</kyn-footer>
 </kyn-ui-shell>
