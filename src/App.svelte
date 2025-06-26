@@ -1,10 +1,10 @@
 <script>
-  	import '@kyndryl-design-system/shidoka-applications/components/global/uiShell';
-  	import '@kyndryl-design-system/shidoka-applications/components/global/header';
+  import '@kyndryl-design-system/shidoka-applications/components/global/uiShell';
+  import '@kyndryl-design-system/shidoka-applications/components/global/header';
 	import '@kyndryl-design-system/shidoka-applications/components/global/localNav';
 	import '@kyndryl-design-system/shidoka-applications/components/global/footer';
 	import '@kyndryl-design-system/shidoka-charts/components/chart';
-	import UserAvatar from '@kyndryl-design-system/shidoka-icons/svg/monochrome/20/user.svg?raw';
+	import UserAvatar from '@kyndryl-design-system/shidoka-icons/svg/monochrome/16/user.svg?raw';
 	import sampleIcon from '@kyndryl-design-system/shidoka-icons/svg/monochrome/16/circle-stroke.svg?raw';
 </script>
 
@@ -14,7 +14,7 @@
 		<kyn-header-nav>
 			<kyn-header-link href="javascript:void(0)"><span>{@html sampleIcon}</span> Link 1 </kyn-header-link>
 			<kyn-header-link href="javascript:void(0)" isActive><span>{@html sampleIcon}</span>  Link 2 </kyn-header-link>
-			<kyn-header-link href="javascript:void(0)"><span>{@html sampleIcon}</span> 
+			<kyn-header-link href="javascript:void(0)"><span>{@html sampleIcon}</span>
 				Link 3
 
 				<kyn-header-link slot="links" href="javascript:void(0)"> Sub Link # 1 </kyn-header-link>

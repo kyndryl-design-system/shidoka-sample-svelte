@@ -15,10 +15,10 @@
     "vite": "^4.4.5"
   },
   "dependencies": {
-    "@kyndryl-design-system/shidoka-applications": "^2.20.0",
-    "@kyndryl-design-system/shidoka-charts": "^2.0.2",
-    "@kyndryl-design-system/shidoka-foundation": "^2.4.3",
-    "@kyndryl-design-system/shidoka-icons": "^2.4.0",
+    "@kyndryl-design-system/shidoka-applications": "^2.46.1",
+    "@kyndryl-design-system/shidoka-charts": "^2.5.2",
+    "@kyndryl-design-system/shidoka-foundation": "^2.4.16",
+    "@kyndryl-design-system/shidoka-icons": "^2.12.2",
     "sass": "^1.69.4"
   }
 }
