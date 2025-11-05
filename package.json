@@ -16,7 +16,7 @@
   },
   "dependencies": {
     "@kyndryl-design-system/shidoka-applications": "^2.68.7-beta.3",
-    "@kyndryl-design-system/shidoka-charts": "^2.5.4",
+    "@kyndryl-design-system/shidoka-charts": "^2.5.5-beta.1",
     "@kyndryl-design-system/shidoka-foundation": "^2.8.0",
     "@kyndryl-design-system/shidoka-icons": "^2.15.0",
     "sass": "^1.69.4"
