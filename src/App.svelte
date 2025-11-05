@@ -3,6 +3,7 @@
   import '@kyndryl-design-system/shidoka-applications/components/global/header';
 	import '@kyndryl-design-system/shidoka-applications/components/global/localNav';
 	import '@kyndryl-design-system/shidoka-applications/components/global/footer';
+	import '@kyndryl-design-system/shidoka-applications/components/reusable/timepicker';
 	import '@kyndryl-design-system/shidoka-charts/components/chart';
 	import UserAvatar from '@kyndryl-design-system/shidoka-icons/svg/monochrome/16/user.svg?raw';
 	import sampleIcon from '@kyndryl-design-system/shidoka-icons/svg/monochrome/16/circle-stroke.svg?raw';
@@ -27,13 +28,6 @@
 				<span slot="button" >{@html UserAvatar}</span>
 					<kyn-header-link href="javascript:void(0)"> Login </kyn-header-link>
 					<kyn-header-link href="javascript:void(0)"> Sign up </kyn-header-link>
-
-			</kyn-header-flyout>
-
-			<kyn-header-flyout assistiveText="My Account" hideArrow>
-				<kyn-header-avatar initials="KB" slot="button" />
-
-				<kyn-header-link href="javascript:void(0)"> Logout </kyn-header-link>
 			</kyn-header-flyout>
 		</kyn-header-flyouts>
 	</kyn-header>
@@ -70,6 +64,10 @@
 		<div class="kd-grid">
 			<div class="kd-grid__col--sm-4 kd-grid__col--md-8 kd-grid__col--lg-12">
 				<h1 class="kd-type--headline-03">Shidoka Svelte Sample App</h1>
+			</div>
+
+			<div class="kd-grid__col--sm-4 kd-grid__col--md-8 kd-grid__col--lg-12">
+				<kyn-time-picker locale="ja"></kyn-time-picker>
 			</div>
 
 			<div class="kd-grid__col--sm-4 kd-grid__col--md-4 kd-grid__col--lg-8">
