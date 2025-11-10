@@ -7,6 +7,21 @@
 	import '@kyndryl-design-system/shidoka-charts/components/chart';
 	import UserAvatar from '@kyndryl-design-system/shidoka-icons/svg/monochrome/16/user.svg?raw';
 	import sampleIcon from '@kyndryl-design-system/shidoka-icons/svg/monochrome/16/circle-stroke.svg?raw';
+
+	const Labels = ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'];
+  const Datasets = [
+    { label: 'Dataset 1', data: [12, 19, 3, 5, 2, 3] },
+    { label: 'Dataset 2', data: [8, 15, 7, 9, 6, 12] }
+  ];
+	const Datasets2 = [
+    { label: 'Dataset 1', data: [12, 19, 3, 5, 2, 3] }
+  ];
+  const Options = {
+    scales: {
+      x: { title: { text: 'Color' } },
+      y: { title: { text: 'Votes' } }
+    }
+  };
 </script>
 
 <kyn-ui-shell>
@@ -76,31 +91,9 @@
 					height="400"
 					chartTitle="Bar Chart"
 					description="Description"
-					labels={['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange']}
-					datasets={[
-						{
-							label: 'Dataset 1',
-							data: [12, 19, 3, 5, 2, 3]
-						},
-						{
-							label: 'Dataset 2',
-							data: [8, 15, 7, 9, 6, 12]
-						}
-					]}
-					options={{
-						scales: {
-							x: {
-								title: {
-									text: 'Color'
-								}
-							},
-							y: {
-								title: {
-									text: 'Votes'
-								}
-							}
-						}
-					}}
+					labels={Labels}
+					datasets={Datasets}
+					options={Options}
 				/>
 			</div>
 
@@ -110,27 +103,9 @@
 					chartTitle="Doughnut Chart"
 					description="Description"
 					height="400"
-					labels={['Blue', 'Red', 'Orange', 'Yellow', 'Green', 'Purple']}
-					datasets={[
-						{
-							label: 'Dataset 1',
-							data: [12, 19, 3, 5, 2, 3]
-						}
-					]}
-					options={{
-						scales: {
-							x: {
-								title: {
-									text: 'Color'
-								}
-							},
-							y: {
-								title: {
-									text: 'Votes'
-								}
-							}
-						}
-					}}
+					labels={Labels}
+					datasets={Datasets2}
+					options={Options}
 				/>
 			</div>
 		</div>
