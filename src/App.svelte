@@ -3,7 +3,7 @@
   import '@kyndryl-design-system/shidoka-applications/components/global/header';
 	import '@kyndryl-design-system/shidoka-applications/components/global/localNav';
 	import '@kyndryl-design-system/shidoka-applications/components/global/footer';
-	import '@kyndryl-design-system/shidoka-applications/components/reusable/timepicker';
+	import '@kyndryl-design-system/shidoka-applications/components/reusable/datepicker';
 	import '@kyndryl-design-system/shidoka-charts/components/chart';
 	import UserAvatar from '@kyndryl-design-system/shidoka-icons/svg/monochrome/16/user.svg?raw';
 	import sampleIcon from '@kyndryl-design-system/shidoka-icons/svg/monochrome/16/circle-stroke.svg?raw';
@@ -82,7 +82,7 @@
 			</div>
 
 			<div class="kd-grid__col--sm-4 kd-grid__col--md-8 kd-grid__col--lg-12">
-				<kyn-time-picker locale="ja"></kyn-time-picker>
+				<kyn-date-picker locale="ja"></kyn-date-picker>
 			</div>
 
 			<div class="kd-grid__col--sm-4 kd-grid__col--md-4 kd-grid__col--lg-8">
