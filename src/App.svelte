@@ -4,6 +4,7 @@
 	import '@kyndryl-design-system/shidoka-applications/components/global/localNav';
 	import '@kyndryl-design-system/shidoka-applications/components/global/footer';
 	import '@kyndryl-design-system/shidoka-applications/components/reusable/datePicker';
+	import '@kyndryl-design-system/shidoka-applications/components/reusable/blockCodeView';
 	import '@kyndryl-design-system/shidoka-charts/components/chart';
 	import UserAvatar from '@kyndryl-design-system/shidoka-icons/svg/monochrome/16/user.svg?raw';
 	import sampleIcon from '@kyndryl-design-system/shidoka-icons/svg/monochrome/16/circle-stroke.svg?raw';
@@ -83,6 +84,19 @@
 
 			<div class="kd-grid__col--sm-4 kd-grid__col--md-8 kd-grid__col--lg-12">
 				<kyn-date-picker locale="ja"></kyn-date-picker>
+
+				<kyn-block-code-view
+      codeSnippet={`
+    const greetUser = (name) => {
+      console.log(\`Hello, \${name}!\`);
+    }
+
+    /* NOTE: Comment here */
+
+    greetUser('World');
+  `}
+    >
+    </kyn-block-code-view>
 			</div>
 
 			<div class="kd-grid__col--sm-4 kd-grid__col--md-4 kd-grid__col--lg-8">
